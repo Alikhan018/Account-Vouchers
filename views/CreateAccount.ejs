@@ -1,0 +1,45 @@
+<%- include('partials/head.ejs') %>
+<div class="main-container">
+    <div class="main-inner-container">
+      <div class="update">
+        <h1>CREATE ACCOUNT</h1>
+        <span>Enter form details to create an account</span>
+        <div class="form-div">
+          <form method="post" action="/accounts/create">
+            <div>
+              <input
+              type="text"
+              name="accountId"
+              id="accountId"
+              required
+              />
+              <label for="accountId">Account Number</label>
+            </div>
+            <div>
+              <select name="accountType" id="account-type">
+                <option value="none" selected disabled>--Account Type--</option>
+                <option value="Assets">Assets</option>
+                <option value="Expense">Expense</option>
+                <option value="Liability">Liability</option>
+                <option value="Revenue">Revenue</option>
+                <option value="Equity">Equity</option>
+              </select>
+            </div>
+            <div>
+              <input
+              type="text"
+              name="accountTitle"
+              id="title"
+              required
+              />
+              <label for="title">Account Title</label>
+            </div>
+            <div>
+              <button type="submit" id="create">Create Account</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<%- include('partials/footer.ejs') %>

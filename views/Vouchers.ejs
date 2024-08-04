@@ -1,0 +1,33 @@
+<%- include('partials/headVoucher.ejs') %>
+<div id="table-container">
+  <h1>Vouchers</h1>
+  <div class="middle-div-vouchers">
+    <button type="button" id="create-voucher-btn">
+      <a href="/vouchers/create-page">Create New Voucher </a><i class="fa-solid fa-add"></i>
+    </button>
+  </div>
+  <section id="table">
+    <div id="head" class="table-row">
+      <span class="table-cell">V-Code</span>
+      <span class="table-cell">V-Memo</span>
+      <span class="table-cell">V-Date</span>
+      <span class="table-cell">Actions</span>
+    </div>
+    <div id="table-body">
+      <% for(let i = 0; i < vouchers.length; i++) { %>
+      <div class="table-row" id="<%= vouchers[i].voucherId %>">
+        <span class="table-cell"data-label="V-Code"><%= vouchers[i].voucherId %></span>
+        <span class="table-cell"data-label="V-Memo"><%= vouchers[i].Memo %></span>
+        <span class="table-cell"data-label="V-Date"><%= vouchers[i].VoucherDate %></span>
+        <span class="table-cell"data-label="Actions">
+          <div>
+            <i class="update fa-solid fa-edit"></i>
+            <i class="delete fa-solid fa-trash"></i>
+          </div>
+        </span>
+      </div>
+      <% } %>
+    </div>
+  </section>
+</div>
+<%- include('partials/footerVoucher.ejs') %>

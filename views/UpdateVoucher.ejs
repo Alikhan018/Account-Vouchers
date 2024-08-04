@@ -1,0 +1,39 @@
+<%- include('partials/headUpdateAccount.ejs') %>
+
+<div class="main-container">
+  <div class="main-inner-container">
+    <div class="update">
+      <h1>UPDATE VOUCHER</h1>
+      <div class="form-div">
+        <form method="post" action="/vouchers/update">
+          <div class="continput">
+          <div>
+            <input
+            type="text"
+            name="voucherMemo"
+            id="memo"
+            value="<%=voucher.Memo%>"
+            />
+            <label for="title">Memo</label>
+          </div>
+          <div class="static">
+            <input
+            type="date"
+            name="voucherDate"
+            id="voucherdate"
+            value="<%=voucher.VoucherDate%>"
+            required
+            />
+            <label for="debit">Date</label>
+          </div>
+          </div>
+            <div class="btns">
+              <button type="reset">Discard</button>
+              <button type="submit">Update</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('partials/footer.ejs') %>

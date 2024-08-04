@@ -1,0 +1,98 @@
+.main-inner-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.main-inner-container .update {
+  width: 70%;
+  height: 300px;
+  background-color: #f6f5f5;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.main-inner-container .update .form-div {
+  display: flex;
+}
+.main-inner-container .update .form-div form {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.main-inner-container .update .form-div form .continput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+.main-inner-container .update .form-div form .continput .static {
+  position: static !important;
+}
+.main-inner-container .update .form-div form .continput div {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+}
+.main-inner-container .update .form-div form .continput div:last-child {
+  position: relative;
+  top: -17px;
+}
+.main-inner-container .update .form-div form .continput div select {
+  padding: 5px;
+}
+.main-inner-container .update .form-div form .continput div input {
+  padding: 5px;
+  outline: none;
+  border-bottom: 3px solid blue;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  background-color: #f6f5f5;
+}
+.main-inner-container .update .form-div form .continput div label {
+  width: 100px;
+  text-align: center;
+  position: relative;
+  top: -36px;
+  left: 8px;
+  font-size: 12px;
+  color: blue;
+  background-color: #f6f5f5;
+}
+.main-inner-container .update .form-div form .btns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.main-inner-container .update .form-div form .btns button {
+  width: 75px;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+.main-inner-container .update .form-div form .btns button:first-child {
+  background-color: #f6f5f5;
+  border: none;
+  text-decoration: underline;
+}
+.main-inner-container .update .form-div form .btns button:last-child {
+  background-color: rgb(60, 60, 248);
+  color: white;
+  border: none;
+}
+.main-inner-container .update .form-div form .btns button:last-child:hover {
+  background-color: rgb(20, 20, 249);
+}
+.main-inner-container .update .form-div form select {
+  background-color: #f6f5f5;
+}
+
+/*# sourceMappingURL=stylesaccountUpdate.css.map */

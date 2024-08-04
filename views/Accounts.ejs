@@ -1,0 +1,32 @@
+<%- include('partials/head.ejs') %>
+<div id="table-container">
+    <h1><%= title%></h1>
+    <section class="button-right-new-account">
+        <button id="new-account"><a href="/accounts/newpage">CREATE NEW ACCOUNT <i class="fa-solid fa-add"></i></a></button>
+    </section>
+    <section id="table">
+        <div id="head" class="table-row">
+            <span class="table-cell">Account No#</span>
+          <span class="table-cell">Account Title</span>
+          <span class="table-cell">Account Type</span>
+          <span class="table-cell">Actions</span>
+        </div>
+        <div id="table-body">
+            <% for(let i = 0; i < accounts.length; i++) { %>
+                <div class="table-row" id="<%= accounts[i].accountId %>">
+                    <span class="table-cell" data-label="Account No#"><%= accounts[i].accountId %></span>
+                    <span class="table-cell" data-label="Account Title"><%= accounts[i].accountTitle %></span>
+                    <span class="table-cell" data-label="Account Type"><%= accounts[i].accountType %></span>
+                    <span class="table-cell" data-label="Actions">
+                        <div>
+                            <i class="update fa-solid fa-edit"></i>
+                            <i class="delete fa-solid fa-trash"></i>
+                        </div>
+                    </span>
+                </div>
+            <% } %>
+        </div>
+      </section>
+</div>
+<script src="js/accountshandler.js"></script>
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,79 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url(../assets/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+header nav {
+  display: flex;
+  gap: 20px;
+  height: 50px;
+  align-items: center;
+  border-bottom: 1px solid rgb(162, 161, 161);
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+header nav a:hover {
+  color: rgb(55, 153, 238);
+}
+
+#home-main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px;
+}
+#home-main-container #home-container {
+  width: 90%;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+#home-main-container #home-container #card-group-home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#home-main-container #home-container #card-group-home .card-home {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid rgb(147, 147, 147);
+}
+#home-main-container #home-container #card-group-home .card-home .inner-home-card-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#home-main-container #home-container #card-group-home .card-home .inner-home-card-layout p {
+  font-size: 30px;
+}
+#home-main-container #home-container #card-group-home .card-home .inner-home-card-layout p i {
+  font-size: 24px;
+  padding-right: 10px;
+}
+#home-main-container #home-container #card-group-home .card-home .inner-home-card-layout span {
+  font-style: italic;
+  font-size: 14px;
+  color: rgb(111, 103, 103);
+}
+#home-main-container #home-container #card-group-home .card-home .inner-home-card-layout a {
+  color: rgb(64, 64, 171);
+  text-decoration: none;
+  display: inline-block;
+}
+#home-main-container #home-container #card-group-home .card-home .inner-home-card-layout a i {
+  padding-left: 5px;
+  font-size: 12px;
+}/*# sourceMappingURL=styles.css.map */

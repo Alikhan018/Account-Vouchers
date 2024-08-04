@@ -1,0 +1,92 @@
+.main-container {
+  width: 100%;
+  display: flex;
+  padding: 10px 0px;
+  justify-content: center;
+}
+.main-container .main-inner-container {
+  width: 80%;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+.main-container .main-inner-container .update {
+  width: 100%;
+  height: 300px;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #F6F5F5;
+}
+.main-container .main-inner-container .update .form-div {
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-container .main-inner-container .update .form-div form {
+  padding-top: 20px;
+  width: 500px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main-container .main-inner-container .update .form-div form div {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.main-container .main-inner-container .update .form-div form div select {
+  padding: 3px;
+  background-color: #F6F5F5;
+}
+.main-container .main-inner-container .update .form-div form div:nth-child(3) {
+  width: 300px;
+}
+.main-container .main-inner-container .update .form-div form div:nth-child(4) {
+  width: auto;
+}
+.main-container .main-inner-container .update .form-div form div input {
+  box-sizing: border-box;
+  padding: 5px;
+  outline: none;
+  border: 1px solid gray;
+  background-color: #F6F5F5;
+}
+.main-container .main-inner-container .update .form-div form div label {
+  position: relative;
+  top: -24px;
+  left: 10px;
+  transition: 0.1s ease-in top, 0s ease-out font-size;
+}
+.main-container .main-inner-container .update .form-div form div input:focus, .main-container .main-inner-container .update .form-div form div input:valid {
+  border: none;
+  border-bottom: 3px solid blue;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.main-container .main-inner-container .update .form-div form div input:focus + label, .main-container .main-inner-container .update .form-div form div input:valid + label {
+  font-size: 12px;
+  text-align: center;
+  width: 100px;
+  position: relative;
+  top: -38px;
+  left: 4px;
+  background-color: #F6F5F5;
+  color: blue;
+}
+.main-container .main-inner-container .update .form-div form div button {
+  background-color: #0054BF;
+  color: white;
+  border-radius: 4px;
+  padding: 4px 5px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.main-container .main-inner-container .update .form-div form div button:hover {
+  background-color: #0054A8;
+}/*# sourceMappingURL=stylesaccountcreate.css.map */

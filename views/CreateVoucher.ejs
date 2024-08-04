@@ -1,0 +1,46 @@
+<%- include('partials/headVoucher.ejs') %>
+<div class="main-container">
+    <div class="main-inner-container">
+      <div class="update">
+        <h1>CREATE VOUCHER</h1>
+        <span>Enter form details to create an voucher</span>
+        <div class="form-div">
+          <form method="post" action="/vouchers/create">
+            <div>
+              <input
+              type="text"
+              name="voucherId"
+              id="voucherId"
+              value="<%= Date.now() %>"
+              required
+              readonly
+              />
+              <label for="voucherId" id="v-id">Voucher Code</label>
+            </div>
+            <div>
+              <input
+              type="text"
+              name="Memo"
+              id="Memo"
+              required
+              />
+              <label for="Memo">Write Memo</label>
+            </div>
+            <div>
+              <input
+              type="date"
+              name="VoucherDate"
+              id="VoucherDate"
+              required
+              />
+              <label for="VoucherDate" style="display: none;">Voucher Date</label>
+            </div>
+            <div>
+              <button type="submit" id="create">Create Account</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<%- include('partials/footerVoucher.ejs') %>

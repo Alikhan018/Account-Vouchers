@@ -1,0 +1,93 @@
+.main-container {
+    width: 100%;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+    .main-inner-container {
+        width: 80%;
+        padding: 10px 0px;
+        display: flex;
+        justify-content: center;
+        .update {
+            width: 100%;
+            height: 300px;
+            padding: 10px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: #F6F5F5;
+            .form-div {
+                padding-top: 10px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                form {
+                    padding-top: 20px;
+                    width: 500px;
+                    text-align: left;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    // flex-direction: column;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        width: 200px;
+                        select {
+                            padding: 3px;
+                            background-color: #F6F5F5;
+                        }
+                        &:nth-child(3){
+                            width: 300px;
+                        }
+                        &:nth-child(4){
+                            width: auto;
+                        }
+                        input {
+                            box-sizing: border-box;
+                            padding: 5px;
+                            outline: none;
+                            border: 1px solid gray;
+                            background-color: #F6F5F5;
+                        }
+                        label {
+                            position: relative;
+                            top: -24px;
+                            left: 10px;
+                            transition: 0.1s ease-in top, 0s ease-out font-size;
+                        }
+                        input:focus, input:valid {
+                            border: none;
+                            border-bottom: 3px solid blue;
+                            border-left: 1px solid gray;
+                            border-top:1px solid gray ;
+                            border-right: 1px solid gray;
+                        }
+                        input:focus + label, input:valid + label {
+                            font-size: 12px;
+                            text-align: center;
+                            width: 100px;
+                            position: relative;
+                            top: -38px;
+                            left: 4px;
+                            background-color: #F6F5F5;
+                            color: blue;
+                        }
+                        button {
+                            background-color: #0054BF;
+                            color: white;
+                            border-radius: 4px;
+                            padding: 4px 5px;
+                            cursor: pointer;
+                            border: 1px solid black;
+                            &:hover {
+                                background-color: #0054A8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
